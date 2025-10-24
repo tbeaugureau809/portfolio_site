@@ -1,0 +1,99 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #ECE7E1;
+    
+     }
+/* Is the Projects, About, Contact Location */
+.div-homepage-headers {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+}
+/*Projects, About, Contact, Font details*/
+.div-homepage-headers p {
+    font-size: 4rem;
+    align-self: start;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    font-family: 'Bruno Ace SC';
+}
+/*Location of about */
+.about-section {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+/*Font for about section */
+.about-section p {
+    font-size: 1rem;
+    font-family: 'Exo 2';
+    font-weight: 400;
+}
+
+.spaceboy {
+    position: fixed;
+    width: 40vw;
+    height: auto;
+    top: -50px;
+    left: 200px;
+    z-index: -1;
+    opacity: 0.3;
+
+
+}
+
+/* Adjusting size for mobile */
+
+@media (max-width: 768px) {
+    body {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .spaceboy {
+        position: static;
+        width: 250px;
+        height: 250px;
+    
+    }
+    
+
+    .div-homepage-headers {
+        order: 1;
+        align-items: center;
+        text-align: center;
+        gap: 0.25rem;
+    }
+
+    .div-homepage-headers p {
+        font-size: 2rem;
+        font-family: 'Bruno Ace SC';
+    }
+
+    .about-section {
+        order: 2;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-family: 'Exo 2';
+        font-weight: 400;
+    }
+}
