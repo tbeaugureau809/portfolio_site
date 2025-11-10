@@ -38,9 +38,51 @@
     grid-row: 2;
 }
 .portrait img {
-    max-width: 250px;
+    max-width: 400px;
     height: auto;
     object-fit: cover;
 
 
+}
+/* Existing styles (keep your current ones) */
+
+/* Responsive fix */
+@media (max-width: 900px) {
+  .bio {
+    grid-column: 1 / -1; /* span full width */
+    grid-row: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .bio-header {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    font-size: 2.2rem;
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  .bio-quote {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 0 20px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .portrait {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .portrait img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+  }
 }
