@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}about{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+{% block content %}
+<div class="bio-header">
+  <h1 class="bio-header">About</h1>
+</div>
+
+
+<div class="bio">
+
+  <p>I'm Troy — a self-taught developer driven by curiosity and a desire to understand how things work.</p>
+  <p>The need to constantly study to stay on top of emerging technologies is something that appeals to me as I constantly want to be challenged to be more than I was before. The moments of frustration of not understanding and the inevitable moment of realization is a feeling that I will forever chase</p>
+  
+  <blockquote class="bio-quote">
+    “The curious mind is never finished.”<br>
+    <span>- Anonymous</span>
+  </blockquote>
+
+  <p>While I do have a passion for all things programming I have found myself drawn towards backend development.</p>
+  <p>I do enjoy Python for the ease of creation but over time I have found myself wanting more understanding and control of ever aspect which is why I am actively learning C++ to strengthen my grasp of computer science fundumentals and low-level design.</p>
+
+  <p>I'm passionate about finding smarter, simpler ways to improve the way things work. In a world evolving faster than ever, I believe technology will ultimately free people to do more fulfilling things with their lives</p>
+
+  <p>I want to work with people who take pride in building things that work beautifully — systems that are clear, reliable, and genuinely useful.</p>
+
+  <p>My goal is simple: to become undeniable through discipline, curiosity, and focused learning.</p>
+
+  
+
+</div>
+<div class="portrait">
+  <img src="{{ url_for('static', filename='portrait.jpeg')}}", alt="Profile photo">
+</div>
+
+
+
+       
+{% endblock %}

@@ -1,0 +1,71 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**background-color:#1A1818  ;*/
+    background-color: #333;
+    max-width: 100%;
+    flex-wrap: wrap;
+    
+     }
+
+
+.greeting {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    font-family: 'Lexend Zetta';
+
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-wrapper p {
+    font-size:2rem; 
+}
+
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info i {
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  font-size: inherit;
+}
+
+
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.contact-info a {
+    color: red;
+    fill:currentColor;
+    font-size: 2rem;
+}
+
+.icon {
+    fill: red;
+    height: 2rem;
+    width: auto; 
+}

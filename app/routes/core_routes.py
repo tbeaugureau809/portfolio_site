@@ -1,11 +1,11 @@
-from flask import Blueprint, redirect, jsonify
+from flask import Blueprint, redirect, jsonify, url_for
 
-bp = Blueprint('main', __name__)
+bp = Blueprint('routes', __name__)
 
-@bp.route('/', __name__)
+@bp.route('/')
 def index():
-    return redirect("/")
+    return redirect(url_for('navigation.get_homepage'))
 
-@bp.routes('/health')
+@bp.route('/health')
 def health():
     return jsonify({"status": "ok"})

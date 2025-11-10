@@ -1,0 +1,46 @@
+.bio-header {
+    grid-column: 2/4;
+    grid-row: 1;
+    align-self: end;
+    font-size: 3rem;
+    padding-left: 25px;
+    font-family: 'Lexend Zetta';
+    color: white;
+}
+.bio-quote {
+ 
+    padding-left: 60px;
+    font-size: 1.5rem;
+}
+.bio {
+    
+    display: grid;
+    grid-row-start:  2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding-left: 25px;
+    font-family: 'Exo 2';
+    font-size: 1rem;
+    line-height:1.6;
+    font-weight:300;
+    max-width: 75ch;
+    color:white;
+    letter-spacing: 0.01em;
+    word-spacing: 0.02em;
+
+
+}
+
+.portrait {
+
+    grid-column: 5/7;
+    grid-row: 2;
+}
+.portrait img {
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+
+
+}

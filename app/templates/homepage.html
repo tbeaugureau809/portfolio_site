@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <title>TroyBeaugureau</title>
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Zetta:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+        <!--Links to stylesheets-->
+        <link rel="stylesheet" href="{{url_for('static', filename='homepage.css') }}"> 
+        <!--Spaceboy-->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    </head>
+
+    <body>
+        <div class = "homepage-main-links">
+            <a href="{{ url_for('navigation.get_projects') }}">Projects</a>
+            <a href="{{ url_for('navigation.get_about' )}}">About</a>
+            <a href="{{ url_for('navigation.get_contact' )}}">Contact</a>
+        </div>
+        <div class="spaceboy-bg">
+            
+        </div>
+        <div class = "homepage-description">
+            <p style="font-size: 1.4vw; font-weight: 700;">Troy Beaugureau</p>
+            <p style="font-weight: 400;">A financial professional who wants to understand your business and the technology that runs it</p>
+            <p style="font-weight: 400">Python / C / HTML / CSS / Flask / Docker</p>
+        </div>
+
+        <!--Spaceboy animation-->
+        <lottie-player class="spaceboy" src="{{ url_for('static', filename='spaceboy.json') }}"
+        background="transparent"
+        speed=".5"
+        loop
+        autoplay
+        ></lottie-player>
+        
+    </body>
+</html>

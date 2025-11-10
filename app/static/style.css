@@ -29,8 +29,20 @@ body {
     font-weight: 600;
     color: black;
     cursor: pointer;
-    font-family: 'Bruno Ace SC';
+    font-family: 'Lexend Zetta';
+    text-decoration: none;
 }
+
+.div-homepage-headers a {
+    font-size: 4rem;
+    align-self: start;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    font-family: 'Lexend Zetta';
+    text-decoration: none;
+}
+
 /*Location of about */
 .about-section {
     grid-row: 4/5;
@@ -39,7 +51,7 @@ body {
 /*Font for about section */
 .about-section p {
     font-size: 1rem;
-    font-family: 'Exo 2';
+    font-family: 'Lexend Zetta';
     font-weight: 400;
 }
 
@@ -50,7 +62,7 @@ body {
     top: -50px;
     left: 200px;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.35;
 
 
 }
@@ -85,7 +97,12 @@ body {
 
     .div-homepage-headers p {
         font-size: 2rem;
-        font-family: 'Bruno Ace SC';
+        font-family: 'Lexend Zetta';
+    }
+
+       .div-homepage-headers a {
+        font-size: 2rem;
+        font-family: 'Lexend Zetta';
     }
 
     .about-section {
@@ -93,7 +110,7 @@ body {
         text-align: center;
         font-size: 1rem;
         margin-top: 1rem;
-        font-family: 'Exo 2';
+        font-family: 'Lexend Zetta';
         font-weight: 400;
     }
 }
