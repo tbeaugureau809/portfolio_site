@@ -1,6 +1,38 @@
 {% extends "base.html" %}
-{% block title %}projecst{% endblock %}
+{% block title %}projects{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='project.css') }}">
+{% endblock %}
 
 {% block content %}
+<section class="projects">
 
+  <div class="project-card">
+    <h3>LoanLens</h3>
+    <p>
+      This was the first real project I made. The main idea was to create something that saves a transfer pricing analyst time when receiving client information. 
+    </p>
+    <p>I learned a lot from the process of this project. Aboout programming and bringing ideas to life as well. </p>
+    <p>While this project does showcase the idea of could happen, the most cost-effective way to implement this is to use GPTs to scan the documents rather than training a model yourself.</p>
+    <a href="https://youtu.be/XnoMdKAZGGk" target="_blank" class="project-link">
+      Watch Project Video →
+    </a>
+  </div>
+
+  <div class="project-card">
+    <h3>Stock Dashboard</h3>
+    <p>
+      For this project my goals were simple. To become more comfortable in CRUD and get experience with APIs.
+    </p>
+    <p>I used docker in order to make sharing easier later.</p>
+
+    <p>I really found getting into this project fascinating with the amount of information at ones disposal in the financial industry. It really makes you wonder how people traded before computers</p>
+    <p>In the future, I plan on adding more features to this in the future such as more strict authentication as well as wallets for a more personal experience so that one can do more than just watch stocks go up and down</p>
+    <a href="https://youtu.be/7dfk4czlAjk" target="_blank" class="project-link">
+      Watch Project Video →
+    </a>
+  </div>
+
+</section>
 {% endblock %}
